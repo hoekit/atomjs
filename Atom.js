@@ -50,6 +50,7 @@ Atom.prototype.ignore = function (observer) {
     return false;
 };
 
+/*
 // Example Usage
 
 var reporter = function (newLang,oldLang) {
@@ -67,3 +68,4 @@ lang.set('TH');             // Atom changed from 'MY' to 'TH'
 lang.ignore(reporter);      // Remove observer
 
 lang.set('Does not show.'); // No observer, nothing reported
+*/
