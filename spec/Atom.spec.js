@@ -23,6 +23,12 @@ describe("Atom", function () {
         lang.set('MY');
         expect(change).toBe("Atom changed from 'EN' to 'MY'");
     });
+
+    it('that ignores observers also do not cause changes.', function () {
+        lang.ignore(reportChange);
+        lang.set('CN');
+        expect(change).toBe("Atom changed from 'EN' to 'MY'");
+    });
 });
 
 
