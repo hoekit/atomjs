@@ -1,5 +1,5 @@
 // Atom
-var Atom = function (state) {
+Atom = function (state) {
     this.state = state;
     this.observers = [];
 }
